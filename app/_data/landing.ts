@@ -1,7 +1,7 @@
 import { LayoutDashboard, Sparkles, ShieldCheck, type LucideIcon } from "lucide-react";
 
 // Placeholder product name. Change it here and in the CLI snippet in page.tsx.
-export const BRAND = "Helm";
+export const BRAND = "OpsBeacon";
 
 export const INTEGRATIONS = [
   "GitHub",

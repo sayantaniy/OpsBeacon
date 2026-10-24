@@ -225,7 +225,7 @@ Approved by maya. Rolled back in 18s.`}</Snippet>
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-muted-foreground md:px-10">
-        {BRAND}. Built for developers who would rather be shipping.
+        {BRAND}. Built for developers by developers with ❤️ by Double Slit Photons
       </footer>
     </div>
   );
