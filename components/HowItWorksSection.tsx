@@ -5,8 +5,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { SITE_CONTENT } from '../data/content';
-import { Check, ArrowRight } from 'lucide-react';
+import { SITE_CONTENT } from '../app/_data/landing';
 
 export const HowItWorksSection: React.FC = () => {
   return (

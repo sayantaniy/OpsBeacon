@@ -5,7 +5,7 @@
  */
 
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/SiteHeader';
 import HeroSection from '../components/HeroSection';
 import IntegrationsSection from '../components/IntegrationsSection';
 import UnifiedDashboardShowcase from '../components/UnifiedDashboardShowcase';

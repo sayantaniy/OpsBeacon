@@ -4,8 +4,8 @@
  */
 
 import React from 'react';
-import { SITE_CONTENT } from '../data/content';
-import { Terminal, Bell, Shield, ArrowUpRight } from 'lucide-react';
+import { SITE_CONTENT } from '../app/_data/landing';
+import { Terminal, Bell } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (

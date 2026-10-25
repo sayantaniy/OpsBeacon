@@ -5,8 +5,8 @@
 
 import React from 'react';
 import { PillButton } from './ui/PillButton';
-import { SITE_CONTENT } from '../data/content';
-import { ArrowRight, Sparkles, Terminal } from 'lucide-react';
+import { SITE_CONTENT } from '../app/_data/landing';
+import { ArrowRight, Terminal } from 'lucide-react';
 
 interface FinalCtaSectionProps {
   onOpenConnectModal: () => void;

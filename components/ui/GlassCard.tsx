@@ -8,7 +8,7 @@ import { motion, type HTMLMotionProps } from 'motion/react';
 
 export interface GlassCardProps extends HTMLMotionProps<'div'> {
   children: React.ReactNode;
-  variant?: 'frosted' | 'outline' | 'dark' | 'yellow-glass';
+  variant?: 'frosted' | 'outline' | 'dark' | 'yellow-glass' | 'mint-glass';
   className?: string;
   withGlow?: boolean;
 }

@@ -5,8 +5,8 @@
 
 import React from 'react';
 import { PillButton } from './ui/PillButton';
-import { SITE_CONTENT } from '../data/content';
-import { Check, ShieldCheck, Lock, FileKey2, KeyRound } from 'lucide-react';
+import { SITE_CONTENT } from '../app/_data/landing';
+import { Check, ShieldCheck, Lock, FileKey2 } from 'lucide-react';
 
 interface SecuritySectionProps {
   onOpenConnectModal: () => void;

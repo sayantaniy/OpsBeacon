@@ -4,10 +4,9 @@
  */
 
 import React from 'react';
-import { motion } from 'motion/react';
 import { PillButton } from './ui/PillButton';
 import { LiquidGlassHeroArt } from './LiquidGlassHeroArt';
-import { SITE_CONTENT } from '../data/content';
+import { SITE_CONTENT } from '../app/_data/landing';
 import { ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 interface HeroSectionProps {

@@ -6,18 +6,16 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PillButton } from './ui/PillButton';
-import { scanRepositoryFiles, type DiscoveredService } from '../utils/stackScanner';
+import { scanRepositoryFiles, type DiscoveredService } from '../lib/stackScanner';
 import { 
   X, 
-  Github, 
+  CodeXml, 
   ShieldCheck, 
-  Key, 
   Check, 
   ArrowRight, 
   Lock, 
   Copy, 
-  CheckCheck,
-  Terminal
+  CheckCheck
 } from 'lucide-react';
 
 interface InteractiveConnectModalProps {
@@ -121,7 +119,7 @@ export const InteractiveConnectModal: React.FC<InteractiveConnectModalProps> = (
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[#091316]">
-                        <Github className="w-4 h-4" />
+                        <CodeXml className="w-4 h-4" />
                       </div>
                       <input
                         type="text"

@@ -13,7 +13,6 @@ export const LiquidGlassHeroArt: React.FC = () => {
   const [isExploded, setIsExploded] = useState(false);
   const [isAutoRotating, setIsAutoRotating] = useState(true);
   const [isWireframe, setIsWireframe] = useState(false);
-  const [activeTier, setActiveTier] = useState<string>('Tier 2: Container Mesh');
 
   // Mutable animation state references
   const animStateRef = useRef({
@@ -344,7 +343,7 @@ export const LiquidGlassHeroArt: React.FC = () => {
 
     // 8. Animation & Render Loop with Spring Kinematics
     let frameId = 0;
-    let clock = new THREE.Clock();
+    const clock = new THREE.Clock();
 
     function renderLoop() {
       const delta = clock.getDelta();

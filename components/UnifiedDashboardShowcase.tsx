@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PillButton } from './ui/PillButton';
-import { SITE_CONTENT } from '../data/content';
+import { SITE_CONTENT } from '../app/_data/landing';
 import { 
   AlertCircle, 
   CheckCircle, 
@@ -14,13 +14,9 @@ import {
   Database, 
   Activity, 
   RotateCcw, 
-  ShieldAlert, 
-  Terminal, 
   UserCheck, 
   XCircle,
-  Clock,
-  Sparkles,
-  ArrowRight
+  Sparkles
 } from 'lucide-react';
 
 export const UnifiedDashboardShowcase: React.FC = () => {
@@ -161,7 +157,7 @@ export const UnifiedDashboardShowcase: React.FC = () => {
                       <div>
                         <span className="font-bold">GitHub Actions:</span> Commit{' '}
                         <code className="bg-[#091316]/10 px-1 py-0.5 rounded font-mono text-[11px]">#7b4f9e</code>{' '}
-                        "Optimize query indexing" deployed to production 4m ago.
+                        &quot;Optimize query indexing&quot; deployed to production 4m ago.
                       </div>
                     </div>
 

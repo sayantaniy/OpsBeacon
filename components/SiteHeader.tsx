@@ -5,8 +5,8 @@
 
 import React, { useState } from 'react';
 import { PillButton } from './ui/PillButton';
-import { SITE_CONTENT } from '../data/content';
-import { Github, Twitter, MessageSquare, Menu, X, ArrowUpRight } from 'lucide-react';
+import { SITE_CONTENT } from '../app/_data/landing';
+import { CodeXml, AtSign, MessageSquare, Menu, X, ArrowUpRight } from 'lucide-react';
 
 interface NavbarProps {
   onOpenConnectModal: () => void;
@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConnectModal }) => {
               aria-label="GitHub Repository"
               className="p-1.5 rounded-full hover:bg-black/10 transition-colors"
             >
-              <Github className="w-4 h-4" />
+              <CodeXml className="w-4 h-4" />
             </a>
             <a
               href="https://twitter.com"
@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConnectModal }) => {
               aria-label="Twitter Community"
               className="p-1.5 rounded-full hover:bg-black/10 transition-colors"
             >
-              <Twitter className="w-4 h-4" />
+              <AtSign className="w-4 h-4" />
             </a>
             <a
               href="https://discord.com"
@@ -136,10 +136,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConnectModal }) => {
           <div className="pt-2 flex items-center justify-between">
             <div className="flex items-center gap-4">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 border border-black/40 rounded-full" aria-label="GitHub">
-                <Github className="w-4 h-4" />
+                <CodeXml className="w-4 h-4" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-2 border border-black/40 rounded-full" aria-label="Twitter">
-                <Twitter className="w-4 h-4" />
+                <AtSign className="w-4 h-4" />
               </a>
             </div>
             <PillButton

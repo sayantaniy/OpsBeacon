@@ -4,28 +4,25 @@
  */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 import { PillButton } from './ui/PillButton';
-import { SITE_CONTENT, type IntegrationItem } from '../data/content';
-import { scanRepositoryFiles, type DiscoveredService } from '../utils/stackScanner';
+import { SITE_CONTENT } from '../app/_data/landing';
+import { scanRepositoryFiles, type DiscoveredService } from '../lib/stackScanner';
 import { 
-  Github, 
+  CodeXml, 
   Cloud, 
   Box, 
   Database, 
   Server, 
   AlertTriangle, 
   Activity, 
-  Check, 
   Lock, 
   RefreshCw,
   Search,
   KeyRound,
-  ShieldAlert
 } from 'lucide-react';
 
 const ICONS: Record<string, React.ReactNode> = {
-  Github: <Github className="w-5 h-5" />,
+  Github: <CodeXml className="w-5 h-5" />,
   Cloud: <Cloud className="w-5 h-5" />,
   Box: <Box className="w-5 h-5" />,
   Database: <Database className="w-5 h-5" />,
@@ -35,7 +32,6 @@ const ICONS: Record<string, React.ReactNode> = {
 };
 
 export const IntegrationsSection: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [repoInput, setRepoInput] = useState<string>('organization/production-api');
   const [isScanning, setIsScanning] = useState<boolean>(false);
   const [scannedServices, setScannedServices] = useState<DiscoveredService[]>(() => {
@@ -51,12 +47,6 @@ export const IntegrationsSection: React.FC = () => {
     datadog: false,
     mongodb: false,
   });
-
-  const categories = ['all', 'Source & VCS', 'Cloud Compute', 'Container Runtime', 'Relational DB', 'Exception Tracking', 'APM & Telemetry'];
-
-  const filteredItems = selectedCategory === 'all'
-    ? SITE_CONTENT.integrations.items
-    : SITE_CONTENT.integrations.items.filter(item => item.category === selectedCategory);
 
   const handleSimulateScan = () => {
     setIsScanning(true);
