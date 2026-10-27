@@ -46,9 +46,9 @@ export const UnifiedDashboardShowcase: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 mb-3 text-xs font-mono font-black uppercase tracking-widest text-[#0D9488]">
-            <span>UNIFIED CONTROL ROOM</span>
-            <span aria-hidden="true">/</span>
-            <span>HUMAN-IN-THE-LOOP COPILOT</span>
+           
+            <span aria-hidden="true"></span>
+            
           </div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase tracking-tighter text-[#091316] leading-none mb-6 font-display">
             {SITE_CONTENT.dashboardShowcase.header}

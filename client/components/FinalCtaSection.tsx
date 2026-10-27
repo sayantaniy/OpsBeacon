@@ -28,7 +28,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenConnectM
         {/* Unboxed Kicker */}
         <div className="flex items-center gap-2 mb-6 text-xs sm:text-sm font-mono font-black uppercase tracking-widest text-[#0D9488]">
           <Terminal className="w-4 h-4" />
-          <span>ZERO-MIGRATION DEPLOYMENT OBSERVER</span>
+          
         </div>
 
         {/* Massive Headline */}

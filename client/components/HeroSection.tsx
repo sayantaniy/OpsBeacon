@@ -32,10 +32,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConnectModal }) 
             {/* Unboxed Metadata Tagline */}
             <div className="flex items-center gap-2 mb-4 text-xs font-mono font-black uppercase tracking-widest text-[#0D9488]">
               <span>{SITE_CONTENT.hero.badge}</span>
-              <span aria-hidden="true" className="text-neutral-400">·</span>
+              <span aria-hidden="true" className="text-neutral-400"></span>
               <span className="flex items-center gap-1 text-[#091316]">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#00D084]" />
-                READ-ONLY BY DEFAULT
+              
               </span>
             </div>
 

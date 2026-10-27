@@ -78,9 +78,9 @@ export const IntegrationsSection: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 mb-3 text-xs font-mono font-black uppercase tracking-widest text-[#0D9488]">
-            <span>ZERO-MIGRATION ARCHITECTURE</span>
-            <span aria-hidden="true">/</span>
-            <span>READ-ONLY DISCOVERY</span>
+            
+            <span aria-hidden="true"></span>
+            
           </div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase tracking-tighter text-[#091316] leading-none mb-6 font-display">
             {SITE_CONTENT.integrations.header}
@@ -100,7 +100,7 @@ export const IntegrationsSection: React.FC = () => {
               >
                 <span className="shrink-0 text-[#0D9488]">{ICONS[item.iconName]}</span>
                 <span>{item.name}</span>
-                <span className="text-[10px] font-mono opacity-60">READ-ONLY</span>
+                
               </div>
             ))}
           </div>
@@ -113,12 +113,11 @@ export const IntegrationsSection: React.FC = () => {
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full bg-[#00D084]" />
               <span className="font-mono text-xs sm:text-sm font-black tracking-wider uppercase">
-                OPSBEACON DISCOVERY AGENT // METADATA PERMISSION VERIFIER
+                OPSBEACON DISCOVERY AGENT
               </span>
             </div>
             <div className="flex items-center gap-2 text-xs font-mono text-white/80">
               <Lock className="w-3.5 h-3.5 text-[#2DD4BF]" />
-              <span>CRYPTOGRAPHIC LEAST-PRIVILEGE</span>
             </div>
           </div>
 
