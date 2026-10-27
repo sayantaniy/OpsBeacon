@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React from 'react';
 import { PillButton } from './ui/PillButton';
 import { LiquidGlassHeroArt } from './LiquidGlassHeroArt';
@@ -31,7 +26,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConnectModal }) 
           <div className="lg:col-span-7 flex flex-col items-start z-10">
             {/* Unboxed Metadata Tagline */}
             <div className="flex items-center gap-2 mb-4 text-xs font-mono font-black uppercase tracking-widest text-[#0D9488]">
-              <span>{SITE_CONTENT.hero.badge}</span>
               <span aria-hidden="true" className="text-neutral-400"></span>
               <span className="flex items-center gap-1 text-[#091316]">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#00D084]" />
