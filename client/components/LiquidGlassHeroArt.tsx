@@ -520,19 +520,7 @@ export const LiquidGlassHeroArt: React.FC = () => {
         <div className="absolute bottom-3 right-3 text-[#00D084]/40 font-mono text-xs select-none pointer-events-none">+</div>
 
         {/* Top Status Bar with Spacing */}
-        <div className="absolute top-3.5 inset-x-3.5 z-20 flex items-center justify-between pointer-events-none">
-          <div className="flex items-center gap-2 bg-[#091316]/90 backdrop-blur-md text-[#00D084] px-3 py-1.5 rounded-full border border-[#00D084]/30 text-[10px] sm:text-[11px] font-mono font-bold shadow-lg pointer-events-auto">
-            <Sparkles className="w-3.5 h-3.5 text-[#00D084] shrink-0" />
-            <span className="truncate">SPLINE 3D BEACON</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00D084] animate-ping inline-block shrink-0" />
-          </div>
-
-          <div className="flex items-center gap-1.5 bg-[#091316]/90 backdrop-blur-md text-white/90 px-2.5 py-1.5 rounded-full border border-white/10 text-[10px] font-mono font-bold shadow-lg pointer-events-auto shrink-0">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00D084] inline-block" />
-            <span>READ-ONLY MESH</span>
-            <span className="text-[#00D084] font-semibold">· 60 FPS</span>
-          </div>
-        </div>
+        
 
         {/* Three.js 3D WebGL Canvas Mount Container */}
         <div

@@ -21,7 +21,7 @@ export const SecuritySection: React.FC<SecuritySectionProps> = ({ onOpenConnectM
           <div className="lg:col-span-6 flex flex-col items-start">
             <div className="flex items-center gap-2 mb-4 text-xs font-mono font-black uppercase tracking-widest text-[#00D084]">
               <Lock className="w-3.5 h-3.5" />
-              <span>ZERO-TRUST FOUNDATION</span>
+              <span></span>
             </div>
 
             <h2 className="break-words text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-black uppercase tracking-tighter text-[#00D084] leading-none mb-6 font-display">
@@ -54,11 +54,11 @@ export const SecuritySection: React.FC<SecuritySectionProps> = ({ onOpenConnectM
             <div className="mt-12 pt-8 border-t border-neutral-800 w-full flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-mono text-neutral-400">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#00D084]" />
-                <span>SOC 2 TYPE II READY</span>
+                <span></span>
               </div>
               <div className="flex items-center gap-2">
                 <FileKey2 className="w-4 h-4 text-[#2DD4BF]" />
-                <span>ZERO RAW LOG RETENTION</span>
+                <span></span>
               </div>
             </div>
           </div>
