@@ -11,20 +11,7 @@ export const Footer: React.FC = () => {
   return (
     <footer id="docs" className="w-full bg-[#061114] text-[#00D084] border-t-2 border-[#091316]">
       {/* Upper Announcement Ribbon */}
-      <div className="border-b border-neutral-800 py-3.5 px-4 sm:px-6 lg:px-8 bg-[#040b0e]">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 text-xs font-mono font-bold">
-          <div className="flex items-center gap-2">
-            <Bell className="w-3.5 h-3.5 text-[#00D084] animate-bounce" />
-            <span className="uppercase tracking-wider text-neutral-200">
-              {SITE_CONTENT.footer.upcomingNotice}
-            </span>
-          </div>
-          <div className="flex items-center gap-2 text-neutral-400">
-            <Terminal className="w-3.5 h-3.5 text-[#2DD4BF]" />
-            <span>npm i -g @opsbeacon/cli // PREVIEW STAGE</span>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Main Footer Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

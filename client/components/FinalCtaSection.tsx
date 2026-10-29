@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React from 'react';
 import { PillButton } from './ui/PillButton';
 import { SITE_CONTENT } from '../app/_data/landing';
@@ -28,7 +23,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenConnectM
         {/* Unboxed Kicker */}
         <div className="flex items-center gap-2 mb-6 text-xs sm:text-sm font-mono font-black uppercase tracking-widest text-[#0D9488]">
           <Terminal className="w-4 h-4" />
-          <span>ZERO-MIGRATION DEPLOYMENT OBSERVER</span>
+          
         </div>
 
         {/* Massive Headline */}
@@ -51,11 +46,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenConnectM
         >
           {SITE_CONTENT.finalCta.buttonText}
         </PillButton>
-
-        {/* Unboxed Micro Guarantee */}
-        <p className="mt-8 text-xs sm:text-sm font-mono font-bold text-neutral-600">
-          {SITE_CONTENT.finalCta.guarantee}
-        </p>
+        
       </div>
     </section>
   );

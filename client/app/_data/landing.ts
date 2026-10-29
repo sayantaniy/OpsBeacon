@@ -53,7 +53,7 @@ export const SITE_CONTENT = {
   ] as NavLink[],
 
   hero: {
-    badge: "UNIFIED DEPLOYMENT & OBSERVABILITY",
+    
     headline: "EVERY SERVICE CONNECTED. EVERY INCIDENT UNDERSTOOD.",
     subtext: "Discover your tech stack, connect the tools you choose, and bring infrastructure signals together to understand incidents with evidence-backed insights.",
     primaryCta: "Connect your stack",
@@ -229,7 +229,6 @@ export const SITE_CONTENT = {
     header: "BRING YOUR ENTIRE STACK INTO FOCUS.",
     subtext: "Connect your repository in 90 seconds. No agents to install, no infra to migrate, 100% read-only verification.",
     buttonText: "Connect your stack →",
-    guarantee: "Free for teams up to 5 engineers · No credit card required · Read-only setup",
   },
 
   footer: {

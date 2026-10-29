@@ -18,13 +18,13 @@ export const SecuritySection: React.FC<SecuritySectionProps> = ({ onOpenConnectM
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column: Mint Green Heading, Manifesto & CTA */}
-          <div className="lg:col-span-5 flex flex-col items-start sticky top-28">
+          <div className="lg:col-span-6 flex flex-col items-start">
             <div className="flex items-center gap-2 mb-4 text-xs font-mono font-black uppercase tracking-widest text-[#00D084]">
               <Lock className="w-3.5 h-3.5" />
-              <span>ZERO-TRUST FOUNDATION</span>
+              <span></span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase tracking-tighter text-[#00D084] leading-none mb-6 font-display">
+            <h2 className="break-words text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-black uppercase tracking-tighter text-[#00D084] leading-none mb-6 font-display">
               {SITE_CONTENT.security.header}
             </h2>
 
@@ -51,20 +51,20 @@ export const SecuritySection: React.FC<SecuritySectionProps> = ({ onOpenConnectM
             </div>
 
             {/* Cryptographic Badges */}
-            <div className="mt-12 pt-8 border-t border-neutral-800 w-full flex items-center gap-6 text-xs font-mono text-neutral-400">
+            <div className="mt-12 pt-8 border-t border-neutral-800 w-full flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-mono text-neutral-400">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#00D084]" />
-                <span>SOC 2 TYPE II READY</span>
+                <span></span>
               </div>
               <div className="flex items-center gap-2">
                 <FileKey2 className="w-4 h-4 text-[#2DD4BF]" />
-                <span>ZERO RAW LOG RETENTION</span>
+                <span></span>
               </div>
             </div>
           </div>
 
           {/* Right Column: List of Security Pillars with Mint Green Checkmarks */}
-          <div className="lg:col-span-7 divide-y divide-neutral-800">
+          <div className="lg:col-span-6 min-w-0 divide-y divide-neutral-800">
             {SITE_CONTENT.security.pillars.map((pillar, idx) => (
               <div
                 key={idx}
@@ -75,7 +75,7 @@ export const SecuritySection: React.FC<SecuritySectionProps> = ({ onOpenConnectM
                     <Check className="w-4 h-4 stroke-[3]" />
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="min-w-0 space-y-2">
                     <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-white font-display">
                       {pillar.title}
                     </h3>
